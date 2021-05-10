@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-10 10:37+0600\n"
+"POT-Creation-Date: 2021-05-10 14:03+0600\n"
 "PO-Revision-Date: 2021-05-10 10:39+0000\n"
 "Last-Translator: b' Toktogaziev <islam010201@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.6\n"
 
-#: .\MyShop\settings.py:138
+#: .\MyShop\settings.py:140
 msgid "English"
 msgstr "English"
 
-#: .\MyShop\settings.py:139
+#: .\MyShop\settings.py:141
 msgid "Russian"
 msgstr "Russian"
 
@@ -111,14 +111,18 @@ msgid "Ваш заказ"
 msgstr "Your order"
 
 #: .\templates\orders\order\create.html:18
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "            \"%(cart.coupon.code)s\" (%(cart.coupon.discount)s%% скидка)\n"
+#| "        "
 msgid ""
 "\n"
-"            \"%(cart.coupon.code)s\" (%(cart.coupon.discount)s%% скидка)\n"
+"            \"%(code)s\" (%(discount)s%% скидка)\n"
 "        "
 msgstr ""
 "\n"
-"            \"%(cart.coupon.code)s\" (%(cart.coupon.discount)s%% OFF)\n"
+"            \"%(code)s\" (%(discount)s%% OFF)\n"
 "        "
 
 #: .\templates\orders\order\create.html:25

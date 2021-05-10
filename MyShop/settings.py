@@ -165,3 +165,5 @@ STATICFILES_DIRS = (
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

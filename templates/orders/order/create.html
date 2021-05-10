@@ -16,7 +16,7 @@
     {% if cart.coupon %}
         <li>
         {% blocktrans with code=cart.coupon.code discount=cart.coupon.discount %}
-            "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% скидка)
+            "{{ code }}" ({{ discount }}% скидка)
         {% endblocktrans %}
             <span>-{{ cart.get_discount|floatformat:"2" }} сом</span>
         </li>
