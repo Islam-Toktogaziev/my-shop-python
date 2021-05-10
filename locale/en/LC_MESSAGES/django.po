@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-10 10:37+0600\n"
+"PO-Revision-Date: 2021-05-10 10:39+0000\n"
+"Last-Translator: b' Toktogaziev <islam010201@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.6\n"
+
+#: .\MyShop\settings.py:138
+msgid "English"
+msgstr "English"
+
+#: .\MyShop\settings.py:139
+msgid "Russian"
+msgstr "Russian"
+
+#: .\MyShop\urls.py:11
+msgid "^cart/"
+msgstr "^cart/"
+
+#: .\MyShop\urls.py:12
+msgid "^orders/"
+msgstr "^orders/"
+
+#: .\MyShop\urls.py:13
+msgid "^coupons/"
+msgstr "^coupons/"
+
+#: .\templates\cart\detail.html:5 .\templates\cart\detail.html:8
+#: .\templates\shop\base.html:33
+msgid "Ваша корзина"
+msgstr "Your cart"
+
+#: .\templates\cart\detail.html:12
+msgid "Изображение"
+msgstr "Image"
+
+#: .\templates\cart\detail.html:13
+msgid "Наименование товара"
+msgstr "Name"
+
+#: .\templates\cart\detail.html:14
+msgid "Количество"
+msgstr "Quantity"
+
+#: .\templates\cart\detail.html:15
+msgid "Удалить"
+msgstr "Remove"
+
+#: .\templates\cart\detail.html:16
+msgid "Цена за одну"
+msgstr "Unit price"
+
+#: .\templates\cart\detail.html:17 .\templates\cart\detail.html:62
+msgid "Сумма"
+msgstr "Price"
+
+#: .\templates\cart\detail.html:44
+msgid "Промежуточный итог"
+msgstr "Subtotal"
+
+#: .\templates\cart\detail.html:49
+#, python-format
+msgid ""
+"\n"
+"        <td>\n"
+"            \"%(cart.coupon.code)s\" купон\n"
+"            (%(cart.coupon.discount)s%% скидка)\n"
+"        </td>\n"
+"    "
+msgstr ""
+"\n"
+"        <td>\n"
+"            \"%(cart.coupon.code)s\" coupon\n"
+"            (%(cart.coupon.discount)s%% OFF)\n"
+"        </td>\n"
+"    "
+
+#: .\templates\cart\detail.html:72
+msgid "Применить"
+msgstr "Apply"
+
+#: .\templates\cart\detail.html:76
+msgid "Продолжить покупки"
+msgstr "Continue shopping"
+
+#: .\templates\cart\detail.html:78 .\templates\orders\order\create.html:29
+msgid "Оформить заказ"
+msgstr "Checkout"
+
+#: .\templates\orders\order\create.html:3
+#: .\templates\orders\order\create.html:6
+msgid "Оформление заказа"
+msgstr "Checkout"
+
+#: .\templates\orders\order\create.html:8
+msgid "Ваш заказ"
+msgstr "Your order"
+
+#: .\templates\orders\order\create.html:18
+#, python-format
+msgid ""
+"\n"
+"            \"%(cart.coupon.code)s\" (%(cart.coupon.discount)s%% скидка)\n"
+"        "
+msgstr ""
+"\n"
+"            \"%(cart.coupon.code)s\" (%(cart.coupon.discount)s%% OFF)\n"
+"        "
+
+#: .\templates\orders\order\create.html:25
+msgid "Общая сумма"
+msgstr "Total price"
+
+#: .\templates\orders\order\created.html:4
+#: .\templates\orders\order\created.html:7
+msgid "Спасибо"
+msgstr "Thank you"
+
+#: .\templates\orders\order\created.html:8
+msgid "Ваш заказ успешно оформлен. Номер вашего заказа"
+msgstr "Your order has been successfully completed. Your order number is"
+
+#: .\templates\shop\base.html:7
+msgid "My shop"
+msgstr "My shop"
+
+#: .\templates\shop\base.html:17
+msgid "Язык"
+msgstr "Language"
+
+#: .\templates\shop\base.html:35
+#, python-format
+msgid ""
+"\n"
+"                %(total_items)s элементов%(total_items|pluralize)s,\n"
+"                %(total_price)s сом\n"
+"            "
+msgstr ""
+"\n"
+"                %(total_items)s item%(total_items|pluralize)s,\n"
+"                %(total_price)s сом\n"
+"            "
+
+#: .\templates\shop\base.html:41
+msgid "Ваша корзина пуста."
+msgstr "Your cart is empty."
+
+#: .\templates\shop\product\detail.html:16
+msgid "Добавить в корзину"
+msgstr "Add to cart"
+
+#: .\templates\shop\product\list.html:5
+msgid "Все товары"
+msgstr "Products"
+
+#: .\templates\shop\product\list.html:9
+msgid "Категории"
+msgstr "Categories"
+
+#: .\templates\shop\product\list.html:22
+msgid "Все товары  "
+msgstr "Products"

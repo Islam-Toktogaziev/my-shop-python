@@ -1,0 +1,32 @@
+{% extends "shop/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Оформление заказа" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Оформление заказа" %}</h1>
+    <div class="order-info">
+        <h3>{% trans "Ваш заказ" %}</h3>
+        <ul>
+    {% for item in cart %}
+        <li>
+            {{ item.quantity }}x {{ item.product.name }}
+            <span>{{ item.total_price }} сом</span>
+        </li>
+    {% endfor %}
+    {% if cart.coupon %}
+        <li>
+        {% blocktrans with code=cart.coupon.code discount=cart.coupon.discount %}
+            "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% скидка)
+        {% endblocktrans %}
+            <span>-{{ cart.get_discount|floatformat:"2" }} сом</span>
+        </li>
+    {% endif %}
+</ul>
+        <p>{% trans "Общая сумма" %}: {{ cart.get_total_price_after_discount|floatformat:"2" }} сом</p>
+    </div>
+    <form action="." method="post" class="order-form">
+        {{ form.as_p }}
+        <p><input type="submit" value="{% trans "Оформить заказ" %}"></p>
+        {% csrf_token %}
+    </form>
+{% endblock %}
