@@ -3,3 +3,6 @@ celery==4.4.2
 xlwt==1.3.0
 whitenoise==5.2.0
 gunicorn==20.1.0
+Pillow==8.2.0
+flower==0.9.7
+django-rosetta==0.9.6
